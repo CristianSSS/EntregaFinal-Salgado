@@ -19,7 +19,7 @@ export default function ItemList({data}){
             display:"grid",
             gap:"20px",
             gridTemplateColumns:"repeat(auto-fit, minmax(300px, 1fr))",
-            justifyContent:"center"
+           
         }}
         >
 

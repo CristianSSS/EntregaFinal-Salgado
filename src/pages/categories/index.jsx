@@ -12,7 +12,6 @@ export default function Categories(){
     const path = useParams();
     useEffect(()=>{
         
-      
         getProductsCategory(path.category)
         .then(prod=>setProduct(prod))
 
@@ -21,7 +20,7 @@ export default function Categories(){
     console.log(product)
     return(
         <>
-            <ItemListContainer greeting={`Categoria: ${product[0].category}` } data={product} />
+            <ItemListContainer greeting={ product[0] ? `Categoria: ${product[0].category}` : "" } data={product} />
         </>
     )
 }

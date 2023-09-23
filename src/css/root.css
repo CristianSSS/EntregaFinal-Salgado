@@ -6,7 +6,45 @@
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
-p,li,span, button{
+p,li,span, button, a{
     font-family: 'Roboto', sans-serif;
 }
+
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: #222;
+    padding: 5px 0;
+    height: 30px;
+}
+
+a:after{
+    background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+
+a:hover{
+    text-decoration: none;
+    color: #3f3f3f;
+   
+    text-shadow: 0 0 1px #4c4c4c;
+}
+
+a:hover:after{
+  
+    width: 100%; 
+    left: 0; 
+}
+
+
 

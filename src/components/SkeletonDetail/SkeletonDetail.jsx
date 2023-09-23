@@ -3,7 +3,7 @@ export default function SkeletonDetail(){
 
     return(
         <>
-            <div class="skeleton-detail"></div>
+            <div className="skeleton-detail"></div>
         </>
     )
 }
