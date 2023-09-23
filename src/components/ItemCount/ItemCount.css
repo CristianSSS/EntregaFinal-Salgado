@@ -1,0 +1,29 @@
+.item-count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+    box-shadow: 3px 3px 2px 1px #222;
+    padding: 10px;
+    border: 1px solid #222;
+    transition: .2s;
+}
+.item-count__number{
+
+    padding: 0 10px;
+    font-size: 20px;
+}
+.item-count__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+.item-count:active{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 1px 1px #222;
+}

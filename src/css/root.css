@@ -1,0 +1,12 @@
+:root{
+    --shadow: 0px 0px 5px 1px  rgba(0, 0, 0, 0.065);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p,li,span, button{
+    font-family: 'Roboto', sans-serif;
+}
+

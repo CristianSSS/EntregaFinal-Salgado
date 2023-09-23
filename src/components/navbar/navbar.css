@@ -1,0 +1,12 @@
+.navbar{
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.menu__li--dropdown{
+    
+}
