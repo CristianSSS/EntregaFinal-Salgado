@@ -1,13 +1,14 @@
 .button{
     background-color: transparent;
-    border: 1px solid #222;
-    box-shadow: 2px 2px 1px 1px #222;
+    border: .0625rem solid #222;
+    box-shadow: .125rem .125rem .0625rem .0625rem #222;
     width: 100%;
-    padding: 10px;
+    padding: .625rem;
     transition: .2;
     cursor: pointer;
+    max-height: 5rem;
 }
 
 .button:active{
-    box-shadow: 1px 1px 1px 1px #222;
+    box-shadow: .0625rem .0625rem .0625rem .0625rem #222;
 }

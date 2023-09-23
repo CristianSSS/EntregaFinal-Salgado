@@ -2,21 +2,16 @@ import Item from "../Item/Item";
 import { getAllProducts } from "../../mock";
 import { useEffect, useState } from "react";
 import Skeleton from "../Skeleton/Skeleton";
-export default function ItemList(){
+
+export default function ItemList({data}){
 
     const [products, setProducts] = useState([]);
 
     useEffect(()=>{
 
-        getAllProducts()
-        .then(data=>{
-            setProducts(data)
-            console.log(data)
-        })
+        setProducts(data);
 
-        
-
-    },[]);
+    },[data]);
 
     return(
         <div

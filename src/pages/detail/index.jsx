@@ -2,11 +2,10 @@ import ItemDetailContainer from "../../components/ItemDetailContainer/ItemDetail
 
 export default function Detail(){
 
-    
 
     return(
-        <>
+        <div style={{padding:"50px 0"}}>
             <ItemDetailContainer />
-        </>
+        </div>
     )
 }

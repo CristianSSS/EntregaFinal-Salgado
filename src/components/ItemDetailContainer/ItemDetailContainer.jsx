@@ -3,7 +3,7 @@ import "./ItemDetailContainer.css"
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { getProductId } from "../../mock";
-import Skeleton from "../Skeleton/Skeleton";
+import SkeletonDetail from "../SkeletonDetail/SkeletonDetail";
 
 export default function ItemDetailContainer(){
 
@@ -21,7 +21,7 @@ export default function ItemDetailContainer(){
 
     return(
         <>
-            { product ?  <ItemDetail data={product} /> : <Skeleton/> }
+            { product ?  <ItemDetail data={product} /> : <SkeletonDetail/> }
                    
         </>
     )

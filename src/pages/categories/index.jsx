@@ -2,8 +2,11 @@ import { useEffect, useState } from 'react'
 import Item from '../../components/Item/Item'
 import { getProductsCategory } from '../../mock'
 import { useParams } from 'react-router-dom';
+import ItemListContainer from '../../components/ItemListContainer/ItemListContainer';
 
 export default function Categories(){
+
+   
 
     const[product, setProduct] = useState([]);
     const path = useParams();
@@ -15,14 +18,10 @@ export default function Categories(){
 
     },[path])
 
+    console.log(product)
     return(
         <>
-            {
-                product.map((prod)=>{
-                    
-                  return  <Item key={prod.id} data={prod} />
-                })
-            }
+            <ItemListContainer greeting={`Categoria: ${product[0].category}` } data={product} />
         </>
     )
 }

@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 150px;
     box-shadow: 3px 3px 2px 1px #222;
     padding: 10px;
     border: 1px solid #222;
     transition: .2s;
+    max-height: 5rem;
 }
 .item-count__number{
 
