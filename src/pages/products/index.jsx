@@ -10,7 +10,7 @@ export default function Products(){
         getAllProducts()
         .then(data=>{
             setProducts(data)
-            console.log(data)
+          
         })
 
         

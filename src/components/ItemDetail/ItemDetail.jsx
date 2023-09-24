@@ -1,8 +1,9 @@
 import "./ItemDetail.css"
 import ItemCount from "../ItemCount/ItemCount"
 import Button from  "../Button/Button"
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../context/cartContext";
 
 export default function ItemDetail({data}){
 
@@ -10,8 +11,14 @@ export default function ItemDetail({data}){
 
     const [quantity, setQuantity]= useState(0);
 
+    const {addItem,  getCart} = useContext(CartContext);
+
     const handlerAddToCart=(cantidad)=>{
+
         setQuantity(cantidad);
+            
+        addItem(data , cantidad);
+       
     }
     
     return(
@@ -34,7 +41,7 @@ export default function ItemDetail({data}){
                         <Link to={"/cart"} >Ir al carrito</Link>
                     ) : (
 
-                        <ItemCount className="detail-button-stock" initial={0} stock={stock} action={handlerAddToCart}/>
+                        <ItemCount className="detail-button-stock" initial={1} stock={stock} action={handlerAddToCart}/>
                     )
                 }
                 

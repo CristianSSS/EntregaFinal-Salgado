@@ -4,6 +4,7 @@
     display: inline-block;
     position: relative;
     padding: 15px;
+    height: auto;
 }
 .carticon-container:hover{
     cursor: pointer;
@@ -11,6 +12,11 @@
 .carticon-icon{
     color: "#303030";
     height: 1.5rem;
+}
+
+.carticon-container:after{
+    display: none!important;
+    border: none!important;
 }
 
 

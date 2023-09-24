@@ -17,8 +17,6 @@ export default function Home(){
                 loop={true}
                 modules={[Autoplay]}
                 autoplay={true}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 >
                 <SwiperSlide>
                     <img src="/banner1.jpg" alt="" />

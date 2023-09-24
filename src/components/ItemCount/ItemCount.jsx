@@ -2,9 +2,11 @@ import './ItemCount.css'
 import { useState } from 'react'
 import Button from '../Button/Button';
 
+
 export default function ItemCount({initial, stock, action}){
 
     const [count, setCount] = useState(initial);
+
 
     const sumar =()=> count < stock ? setCount(count + 1) : null;
     
@@ -12,7 +14,9 @@ export default function ItemCount({initial, stock, action}){
     const restar =()=> count > 1 ? setCount(count - 1) : null;
 
     const addToCart=()=>{
+            
         action(count);
+        
     }
         
 

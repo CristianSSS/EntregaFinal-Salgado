@@ -66,13 +66,6 @@ export default function Menu(){
                 )
             }
 
-            
-
-            <li>
-                <button className="menu__button">
-                    Contacto
-                </button>
-            </li>
         </menu>
     )
 }

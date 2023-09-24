@@ -17,7 +17,7 @@ export default function Categories(){
 
     },[path])
 
-    console.log(product)
+  
     return(
         <>
             <ItemListContainer greeting={ product[0] ? `Categoria: ${product[0].category}` : "" } data={product} />
