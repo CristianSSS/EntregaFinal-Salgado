@@ -6,15 +6,18 @@ import { getProductsCategory } from '../../firebase/services';
 
 export default function Categories(){
 
-   
-
     const[product, setProduct] = useState([]);
     const path = useParams();
     useEffect(()=>{
         
-        getProductsCategory(path.category)
-        .then(prod=>setProduct(prod))
-
+        getProductsCategory()
+        .then(snapshots=>{
+            const prod = snapshots.docs.map((snapshot)=>({ id:snapshot.id, ...snapshot.data()}))
+            const prodCate = prod.filter((prod)=> prod.category === path.category);
+            
+            setProduct(prodCate)
+       })
+       
     },[path])
 
   

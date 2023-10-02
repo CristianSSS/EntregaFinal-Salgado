@@ -15,16 +15,9 @@ export const getProducts=()=>{
 
 } 
 
-export const getProductsCategory=(categoria)=>{
+export const getProductsCategory= ()=>{
 
-    const products = getDocs(collection(db, "items" ));
-
-    const prod = products.docs.map((pro)=>({ id:pro.id, ...pro.data()}))
-
-    console.log(prod)
-
-    const prodCate = prod.filter((prod)=> prod.category === categoria);
-
-    return prodCate;
+   return getDocs(collection(db, "items" ))
+    
     
 }
