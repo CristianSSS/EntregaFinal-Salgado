@@ -1,9 +1,10 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
 import "./ItemDetailContainer.css"
-import { useParams } from "react-router-dom"
+import { json, useParams } from "react-router-dom"
 import { useEffect, useState } from "react";
-import { getProductId } from "../../mock";
 import SkeletonDetail from "../SkeletonDetail/SkeletonDetail";
+import { getProductId } from "../../firebase/services";
+
 
 export default function ItemDetailContainer(){
 
@@ -13,9 +14,14 @@ export default function ItemDetailContainer(){
 
     useEffect(()=>{
 
-        getProductId(+id)
-        .then(produ => setProduct(produ))
+       getProductId(id)
+        .then((produ)=>{
+            setProduct({id:produ.id, ...produ.data()})
+        })
+        .catch(err => console.log(err))
+        .finally()
 
+    
     },[id])
 
 

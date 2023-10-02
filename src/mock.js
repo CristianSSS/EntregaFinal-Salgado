@@ -18,7 +18,7 @@ let productos = [
         excerp: "Unos pantalones de alta calidad y al mejor precio",
         color: "Azul marino",
         stock: 32,
-        pictureUrl:"https://alcatraz.com.ar/wp-content/uploads/2021/09/Pantalon-Ultra-azul_0000s_0006_Pantalon-Ultra-3.jpg",
+        pictureUrl:"https://marcopololp.com.ar/wp-content/uploads/2021/10/pantalon-drake-verde-old-bridge-marco-polo-1.jpg",
         category:"pantalones"
     },
     {
@@ -200,5 +200,11 @@ export const getProductsCategory=(categoria)=>{
         }, 1000);
 
     })
+}
+
+
+
+export const getProducts=()=>{
+    
 }
 
