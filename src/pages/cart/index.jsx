@@ -54,6 +54,8 @@ export default function Cart(){
                    })
                 }
             </div>
+
+            <Link to={"/checkout"}>Ir al checkout</Link>
         </>
     )
 }

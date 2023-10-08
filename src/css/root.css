@@ -6,7 +6,7 @@
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
-p,li,span, button, a{
+p,li,span, button, a, label{
     font-family: 'Roboto', sans-serif;
 }
 

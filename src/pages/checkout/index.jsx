@@ -1,8 +1,8 @@
-
+import Form from "../../components/Form/Form"
 export default function Checkout(){
     return(
         <>
-            <h1>eSTES EL E S</h1>
+            <Form />
         </>
     )
 }
